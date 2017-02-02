@@ -1,0 +1,3 @@
+# special requirements for tests
+nose
+mock

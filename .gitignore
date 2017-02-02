@@ -1,0 +1,12 @@
+app/output*
+*.pyc
+.idea*
+app/local_config.py
+app/reset_flowing.py
+test_services.py
+*.py~
+app/lime_mock.py
+app/templates/test.py
+venv/
+app/local_settings.py
+*.log

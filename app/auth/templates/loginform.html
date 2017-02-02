@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h2>Login</h2>
+    {% if form.errors %}<p class=error><strong>Your form contains errors.</strong>{% endif %}
+    <form method="POST" action="/pyapi/login">
+        {{ form.hidden_tag() }}
+        <dl>
+            <dt>{{ form.project_number.label }} <dd>{{ form.project_number(size=20) }}
+            <dt>{{ form.project_id.label }} <dd>{{ form.project_id(size=32) }}
+            <dt>{{ form.user_id.label }} <dd>{{ form.user_id(size=32) }}
+            <dt>{{ form.user_name.label}} <dd>{{ form.user_name(size=32) }}
+            <dt>{{ form.token.label }} <dd>{{ form.token(size=64) }}
+            <dt>{{ form.submit }}
+        </dl>
+    </form>
+</body>
+</html>
+
+
